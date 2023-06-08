@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    background-color:smokewhite;
 }
 
 header {
@@ -13,6 +14,7 @@ header {
     align-items: center;
     justify-content: space-between;
     z-index: 999;
+    background-color: lightgray;
      
 }
 
@@ -130,58 +132,7 @@ nav ul li a:hover::after {
     }
 }
 
-.intro {
-    text-align: center; 
-    background-color: lightgray;
-}
-
-
-.intro h1 {
-    font-family:'Times New Roman', Times, serif;
-    color: #4C4C4C;
-    font-size: 30px;
-    padding-top: 15px;
-    margin-bottom: 10px;
-    font-weight: bold;
-}
-.intro p{
-    
-    font-size: 20px;
-    margin-left: 20vw;
-    margin-right: 20vw;
-    align-items: center;
-    line-height: 1.5;
-    color: #666666;
-}
-
-.intro h2 {
-    font-size: 22px;
-    color: rgb(51, 51, 51);
-    margin-top: 10px;
-    padding-bottom: 10px;
-    font-family: 'Lato', sans-serif;
-    font-weight: bold;
-}
- .info-container {
-    margin-top: 20px;
-} 
-
-.info {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-    margin-left: 100px;
-}
-    
-    .gray-info{
-        color: #d2d2d2;
-    } 
-
-    .heading-info{
-        font-size: 20px;
-       
-    }
-
- .copyright{
+.copyright{
     display: flex;
     justify-content: center;
     position: relative;
@@ -194,7 +145,8 @@ nav ul li a:hover::after {
     background-color: rgb(33, 33, 33);
     color: white;
     padding-top: 7vh;
-    
+    position: relative;
+   
   }
   
   .social-media {
@@ -222,52 +174,47 @@ nav ul li a:hover::after {
     text-align: right;
     margin-right: 14vw;
 }
-
-
-
-   
-
-body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden; /* Hides horizontal scrollbar */
+body{
+    display: flex;
+    flex-direction: column;
 }
 
-.bg-img {
-    background-image: url("images/bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+
+
+
+
+/* About us */
+
+.container{
+    width:100%;
+    padding-top: 60px;
 }
-.quote-line{
-     font-size: 22px;
-    color: rgb(51, 51, 51);
-    margin-top: 10px;
-    padding-bottom: 10px;
-    font-family: 'Lato', sans-serif;
+
+h1{
+    text-align:center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:  60px;
+}
+h2{
+    font-family:'Times New Roman', Times, serif;
+    color: #4C4C4C;
+    font-size: 30px;
+    padding-top: 15px;
+    margin-bottom: 10px;
     font-weight: bold;
+    text-align: center;
 }
 
-/* login */
+h4{
+    font-size: 20px;
+    text-align: justify;
+    margin-left: 15vw;
+    margin-right: 15vw; 
+    line-height: 1.5;
+    color: #666666;
 
 
-nav button{
-    width: 100px;
-    height:50px;
-    position: relative;
-    top: 5px;
-    border: 2px solid rgb(32, 30, 30);
-    outline: none;
-    cursor: pointer;
-    font-size: 1.1em;
-    margin-left: 10px;
-    transition: .5s;
-    text-decoration: none;
-    background:transparent
 }
-
-
-nav button:hover{
-    background-color:whitesmoke;
+h3{
+    text-align: center;
 }
